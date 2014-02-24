@@ -1,0 +1,169 @@
+(pcb C:\Users\Paul\Documents\ElectronicsProjects\WS2812Grid_001\WS2812Grid_001.dsn
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+    (host_cad "KiCad's Pcbnew")
+    (host_version "(2013-07-07 BZR 4022)-stable")
+  )
+  (resolution um 10)
+  (unit um)
+  (structure
+    (layer F.Cu
+      (type signal)
+      (property
+        (index 0)
+      )
+    )
+    (layer B.Cu
+      (type signal)
+      (property
+        (index 1)
+      )
+    )
+    (boundary
+      (path pcb 0  249000 -123000  271000 -123000  271695 -122939  272368 -122759
+            273000 -122464  273571 -122064  274064 -121571  274464 -121000
+            274759 -120368  274939 -119695  275000 -119000  275000 -99000
+            274939 -98305.4  274759 -97631.9  274464 -97000  274064 -96428.9
+            273571 -95935.8  273000 -95535.9  272368 -95241.2  271695 -95060.8
+            271000 -95000  249000 -95000  248305 -95060.8  247632 -95241.2
+            247000 -95535.9  246429 -95935.8  245936 -96428.9  245536 -97000
+            245241 -97631.9  245061 -98305.4  245000 -99000  245000 -119000
+            245061 -119695  245241 -120368  245536 -121000  245936 -121571
+            246429 -122064  247000 -122464  247632 -122759  248305 -122939
+            249000 -123000)
+    )
+    (plane GND (polygon B.Cu 0  247000 -97000  248000 -96000  272000 -96000  274000 -98000
+            274000 -120000  272000 -122000  248000 -122000  246000 -120000
+            246000 -98000  247000 -97000))
+    (via "Via[0-1]_889:635_um" "Via[0-1]_889:0_um")
+    (rule
+      (width 254)
+      (clearance 254.1)
+      (clearance 254.1 (type default_smd))
+      (clearance 63.5 (type smd_smd))
+    )
+  )
+  (placement
+    (component WS2812
+      (place IC1 262000 -109000 front 0 (PN WS2812))
+    )
+    (component SM1206
+      (place R1 254000 -105000 front 90 (PN 150))
+      (place C1 254000 -113000 front 270 (PN 0.1uf))
+    )
+    (component "SIL-3"
+      (place K1 247000 -109000 front 90 (PN CONN_IN))
+      (place K2 273000 -109000 front 270 (PN CONN_OUT))
+    )
+  )
+  (library
+    (image WS2812
+      (outline (path signal 150  -2500 2500  -3000 3000))
+      (outline (path signal 150  -1500 2500  -2500 1500))
+      (outline (path signal 150  2500 -2500  2500 2500))
+      (outline (path signal 150  2500 2500  -2500 2500))
+      (outline (path signal 150  -2500 2500  -2500 -2500))
+      (outline (path signal 150  -2500 -2500  2500 -2500))
+      (pin Rect[T]Pad_1500x1000_um 3 -2450 -1600)
+      (pin Rect[T]Pad_1500x1000_um 1 -2450 1600)
+      (pin Rect[T]Pad_1500x1000_um 2 -2450 0)
+      (pin Rect[T]Pad_1500x1000_um 6 2450 1600)
+      (pin Rect[T]Pad_1500x1000_um 5 2450 0)
+      (pin "Rect[T][750,-500]Pad_1500x1000_um" 4 1700 -1100)
+    )
+    (image SM1206
+      (outline (path signal 127  -2540 1143  -2540 -1143))
+      (outline (path signal 127  -2540 -1143  -889 -1143))
+      (outline (path signal 127  889 1143  2540 1143))
+      (outline (path signal 127  2540 1143  2540 -1143))
+      (outline (path signal 127  2540 -1143  889 -1143))
+      (outline (path signal 127  -889 1143  -2540 1143))
+      (pin Rect[T]Pad_1524x2032_um 1 -1651 0)
+      (pin Rect[T]Pad_1524x2032_um 2 1651 0)
+    )
+    (image "SIL-3"
+      (outline (path signal 304.8  -3810 -1270  -3810 1270))
+      (outline (path signal 304.8  -3810 1270  3810 1270))
+      (outline (path signal 304.8  3810 1270  3810 -1270))
+      (outline (path signal 304.8  3810 -1270  -3810 -1270))
+      (outline (path signal 304.8  -1270 1270  -1270 -1270))
+      (pin Rect[A]Pad_1397x1397_um 1 -2540 0)
+      (pin Round[A]Pad_1397_um 2 0 0)
+      (pin Round[A]Pad_1397_um 3 2540 0)
+    )
+    (padstack Round[A]Pad_1397_um
+      (shape (circle F.Cu 1397))
+      (shape (circle B.Cu 1397))
+      (attach off)
+    )
+    (padstack Rect[A]Pad_1397x1397_um
+      (shape (rect F.Cu -698.5 -698.5 698.5 698.5))
+      (shape (rect B.Cu -698.5 -698.5 698.5 698.5))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_1500x1000_um
+      (shape (rect F.Cu -750 -500 750 500))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_1524x2032_um
+      (shape (rect F.Cu -762 -1016 762 1016))
+      (attach off)
+    )
+    (padstack "Rect[T][750,-500]Pad_1500x1000_um"
+      (shape (rect F.Cu 0 -1000 1500 0))
+      (attach off)
+    )
+    (padstack "Via[0-1]_889:635_um"
+      (shape (circle F.Cu 889))
+      (shape (circle B.Cu 889))
+      (attach off)
+    )
+    (padstack "Via[0-1]_889:0_um"
+      (shape (circle F.Cu 889))
+      (shape (circle B.Cu 889))
+      (attach off)
+    )
+  )
+  (network
+    (net +5V
+      (pins IC1-5 R1-2 K1-3 K2-1)
+    )
+    (net /DOUT
+      (pins IC1-1 K2-2)
+    )
+    (net GND
+      (pins IC1-6 C1-2 K1-1 K2-3)
+    )
+    (net "N-000002"
+      (pins IC1-2 K1-2)
+    )
+    (net "N-000005"
+      (pins IC1-3 R1-1 C1-1)
+    )
+    (class kicad_default "" /DOUT "N-000002"
+      (circuit
+        (use_via Via[0-1]_889:635_um)
+      )
+      (rule
+        (width 254)
+        (clearance 254.1)
+      )
+    )
+    (class Power +5V GND "N-000005"
+      (circuit
+        (use_via Via[0-1]_889:635_um)
+      )
+      (rule
+        (width 609.6)
+        (clearance 254.1)
+      )
+    )
+  )
+  (wiring
+    (wire (path F.Cu 609.6  264450 -107400  264450 -104550  265500 -103500)(net GND)(type protect))
+    (wire (path F.Cu 609.6  254000 -114651  254000 -119380)(net GND)(type protect))
+    (via "Via[0-1]_889:635_um"  265500 -103500 (net GND)(type protect))
+    (via "Via[0-1]_889:635_um"  254000 -119380 (net GND)(type protect))
+  )
+)
